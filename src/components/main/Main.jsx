@@ -12,7 +12,7 @@ function Main() {
       <HeroBanner />
       <Why />
       <About />
-      {/* <Service /> */}
+      <Service />
       <Process />
       <Brands />
     </>
