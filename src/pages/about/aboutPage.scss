@@ -1,0 +1,52 @@
+.about-page-content {
+  display: flex;
+  margin: 4rem 0;
+  width: 100%;
+  height: 400px;
+
+  .about-page-left {
+    width: 60%;
+    background-color: #f8f9fa;
+    color: rgb(96, 95, 95);
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    padding: 2rem;
+
+    .about-heading-wrapper {
+      display: flex;
+      padding: 2rem 0;
+
+      .icon {
+        padding: 1rem;
+        background-color: #203040;
+        color: #fff;
+        margin-left: 3rem;
+      }
+
+      h2 {
+        color: #203040;
+        text-align: center;
+        padding: 0 2rem;
+
+        span {
+          font-weight: 100;
+          padding-right: 0.5rem;
+        }
+      }
+    }
+    p {
+      padding: 0 3rem;
+    }
+  }
+
+  .about-page-right {
+    width: 40%;
+
+    .about-page-right-img {
+      max-width: 30rem;
+      max-height: 25rem;
+    }
+  }
+}

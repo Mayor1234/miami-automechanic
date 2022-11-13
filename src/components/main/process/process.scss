@@ -1,0 +1,318 @@
+.process-bg {
+  background-color: #f0f2f7;
+  padding: 5rem;
+  margin-top: 5rem;
+
+  .our-process {
+    .process-heading {
+      padding-bottom: 2rem;
+
+      h2 {
+        margin: 2rem 1rem;
+        color: #203040;
+        font-size: 30px;
+        font-weight: 700;
+
+        span {
+          border-bottom: 0.2rem solid red;
+          font-weight: 100;
+          padding-bottom: 0.5rem;
+        }
+      }
+    }
+
+    .box-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem;
+
+      .process-box {
+        background-color: #203040;
+        position: relative;
+        color: #fff;
+        width: 100%;
+        height: 200px;
+        padding: 1rem;
+
+        .arrow-content {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: 6rem;
+          margin-top: 1rem;
+        }
+
+        h3 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .process-icon {
+          color: white;
+          z-index: 20;
+          font-size: 3rem;
+          position: absolute;
+          top: 4rem;
+          left: 2rem;
+        }
+
+        &:nth-child(odd) {
+          background-color: rgba(25, 128, 232, 0.844);
+          color: #fff;
+        }
+
+        .arrow-div {
+          position: absolute;
+          top: 0;
+          left: 0.4rem;
+          bottom: 0;
+          width: 0.2rem;
+          border-top: 100px solid transparent;
+          border-bottom: 100px solid transparent;
+          border-left: 100px solid #203040;
+        }
+        .arrow-div2 {
+          position: absolute;
+          top: 0;
+          left: 0.4rem;
+          bottom: 0;
+          width: 0.2rem;
+          border-top: 100px solid transparent;
+          border-bottom: 100px solid transparent;
+          border-left: 100px solid rgba(25, 128, 232, 0.844);
+        }
+        .arrow-div3 {
+          position: absolute;
+          top: 0;
+          left: 0.4rem;
+          bottom: 0;
+          width: 0.2rem;
+          border-top: 100px solid transparent;
+          border-bottom: 100px solid transparent;
+          border-left: 100px solid #203040;
+        }
+      }
+    }
+  }
+}
+
+// Media Query_______________________________________
+
+@media only screen and (max-width: 768px) {
+  .process-bg {
+    margin-top: 2rem;
+    width: 100%;
+    padding: 0;
+
+    .our-process {
+      padding: 1rem;
+      .process-heading {
+        max-width: 100%;
+        margin: 0;
+        padding: 2rem 0;
+
+        h2 {
+          margin: 0;
+          font-size: 2rem;
+          font-weight: 700;
+
+          span {
+            border-bottom: 0.2rem solid red;
+            font-weight: 100;
+            padding-bottom: 0.5rem;
+          }
+        }
+      }
+
+      .box-container {
+        display: flex;
+        flex-direction: column;
+
+        .process-box {
+          background-color: #203040;
+          position: relative;
+          color: #fff;
+          width: 450px;
+          height: 250px;
+          padding: 1rem;
+
+          .arrow-content {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-left: 0;
+            margin-top: 0;
+            padding: 1rem;
+          }
+          h3 {
+            display: flex;
+            justify-content: start;
+            align-items: flex-start;
+            padding: 0.5rem 3rem;
+          }
+          .process-icon {
+            color: white;
+            z-index: 20;
+            font-size: 1.5rem;
+            position: absolute;
+            top: 1.6rem;
+            left: 2rem;
+            padding-right: 5rem;
+          }
+          .arrow-div,
+          .arrow-div2,
+          .arrow-div3 {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .process-bg {
+    margin-top: 2rem;
+    width: 100%;
+    padding: 0;
+
+    .our-process {
+      padding: 1rem;
+      .process-heading {
+        max-width: 100%;
+        margin: 0;
+        padding: 2rem 0;
+
+        h2 {
+          margin: 0;
+          font-size: 1.5rem;
+          font-weight: 700;
+
+          span {
+            border-bottom: 0.2rem solid red;
+            font-weight: 100;
+            padding-bottom: 0.5rem;
+          }
+        }
+      }
+
+      .box-container {
+        display: flex;
+        flex-direction: column;
+
+        .process-box {
+          background-color: #203040;
+          position: relative;
+          color: #fff;
+          width: 350px;
+          height: 200px;
+          padding: 1rem;
+          margin: 0 1rem;
+
+          .arrow-content {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-left: 0;
+            margin-top: 0;
+            padding: 1rem;
+          }
+          h3 {
+            display: flex;
+            justify-content: start;
+            align-items: flex-start;
+            padding: 0.5rem 3rem;
+          }
+          .process-icon {
+            color: white;
+            z-index: 20;
+            font-size: 1.2rem;
+            position: absolute;
+            top: 1.6rem;
+            left: 2rem;
+            padding-right: 5rem;
+          }
+          .arrow-div,
+          .arrow-div2,
+          .arrow-div3 {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .process-bg {
+    margin-top: 2rem;
+    width: 100%;
+    padding: 0;
+
+    .our-process {
+      padding: 1rem;
+      .process-heading {
+        max-width: 100%;
+        margin: 0;
+        padding: 2rem 0;
+
+        h2 {
+          margin: 0;
+          font-size: 1.5rem;
+          font-weight: 700;
+
+          span {
+            border-bottom: 0.2rem solid red;
+            font-weight: 100;
+            padding-bottom: 0.5rem;
+          }
+        }
+      }
+
+      .box-container {
+        display: flex;
+        flex-direction: column;
+
+        .process-box {
+          background-color: #203040;
+          position: relative;
+          color: #fff;
+          width: 350px;
+          height: 200px;
+          padding: 1rem;
+          margin: 0 1rem;
+
+          .arrow-content {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-left: 0;
+            margin-top: 0;
+            padding: 1rem;
+          }
+          h3 {
+            display: flex;
+            justify-content: start;
+            align-items: flex-start;
+            padding: 0.5rem 3rem;
+          }
+          .process-icon {
+            color: white;
+            z-index: 20;
+            font-size: 1.2rem;
+            position: absolute;
+            top: 1.6rem;
+            left: 2rem;
+            padding-right: 5rem;
+          }
+          .arrow-div,
+          .arrow-div2,
+          .arrow-div3 {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

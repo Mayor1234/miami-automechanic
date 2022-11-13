@@ -1,0 +1,132 @@
+.service-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+
+  .bg-service {
+    background: black;
+    height: 70vh;
+    width: 100%;
+    color: white;
+    background: linear-gradient(
+        180deg,
+        rgba(43, 59, 201, 0.709),
+        rgba(11, 11, 11, 0.276)
+      ),
+      url('/asset/image/miami1.JPG') no-repeat center center/cover;
+    background-attachment: fixed;
+
+    h2 {
+      position: absolute;
+      top: 20%;
+      left: 5%;
+      font-size: 35px;
+      font-weight: 700;
+      padding: 0 1rem;
+
+      span {
+        padding-bottom: 0.5rem;
+        font-weight: 100;
+        border-bottom: 2px solid red;
+      }
+    }
+  }
+
+  .service-display {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 20rem;
+
+    .service-box {
+      background-color: #203040;
+      color: #fff;
+      width: 400px;
+      height: 400px;
+      margin: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 4px 2px rgba(0, 0, 0, 0.2), 0 8px 6px rgba(0, 0, 0, 0.03),
+        0 16px 10px rgba(0, 0, 0, 0.04), 0 26px 18px rgba(0, 0, 0, 0.05);
+
+      .service-box2-content {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+
+        .about-btn-center {
+          display: flex;
+          justify-content: start;
+          padding: 0 2rem;
+
+          p {
+            // color: #203040;
+            color: #fff;
+
+            &:hover {
+              color: rgb(45, 115, 201);
+            }
+          }
+
+          .read-more-icon {
+            padding-left: 0.5rem;
+          }
+        }
+      }
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+      }
+
+      ul {
+        padding: 1rem;
+        padding-left: 2rem;
+
+        li {
+          padding-bottom: 0.8rem;
+          color: #f7f8f9;
+        }
+      }
+
+      .service-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+// Media Query______________________________________
+
+@media only screen and (max-width: 390px) {
+  .bg-service {
+    height: 40vh;
+    width: 100%;
+  }
+  .service-display {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20%;
+    top: 0;
+
+    .service-box {
+      margin: 0;
+      height: 0;
+    }
+
+    .box-1,
+    .box-3 {
+      display: none;
+    }
+    .box-2 {
+      margin: auto;
+      width: 350px;
+    }
+  }
+}

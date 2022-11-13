@@ -1,0 +1,253 @@
+.about {
+  margin: 4rem 0;
+  width: 100%;
+}
+.about-container {
+  display: flex;
+  width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.about-left {
+  width: 60%;
+  height: 100%;
+  background-color: #203040;
+  color: #fff;
+  margin: 2rem 0;
+
+  .about-left-bg-img {
+    position: relative;
+    background: black;
+    color: white;
+    background: linear-gradient(
+        180deg,
+        rgba(19, 19, 20, 0.4),
+        rgba(11, 11, 11, 0.5)
+      ),
+      url('/asset/image/miami4.JPG') no-repeat top center/cover;
+    height: 32rem;
+    padding: 1rem;
+
+    .read-more {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+
+      .about-left-content {
+        padding: 0 2rem;
+        opacity: 0.8;
+
+        h2 {
+          padding-bottom: 2rem;
+          font-size: 2rem;
+          span {
+            padding: 0 1rem;
+            font-weight: 500;
+            font-size: 1.5rem;
+          }
+        }
+        .about-btn-center {
+          display: flex;
+          justify-content: center;
+
+          .about-btn {
+            display: flex;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            color: rgb(45, 115, 201);
+            background-color: #fff;
+            transform: scale(1, 1);
+            transition: transform 0.35s ease-out;
+            opacity: 1;
+
+            &:hover {
+              cursor: pointer;
+              color: rgb(45, 115, 201);
+              background-color: rgb(212, 209, 209);
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.about-right {
+  background-color: #f8f9fa;
+  color: rgb(96, 95, 95);
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+  margin: 2rem 0;
+
+  .about-right-content {
+    padding: 1rem 2rem;
+    height: 32rem;
+  }
+
+  h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #203040;
+
+    span {
+      border-bottom: 0.2rem solid red;
+      font-weight: 100;
+      padding: 0.5rem 0;
+    }
+  }
+  p,
+  li {
+    margin-bottom: 2rem;
+    color: rgb(95, 94, 94);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+// Media Query________________________________________________
+
+@media only screen and (max-width: 768px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+
+    .about-left {
+      position: relative;
+      background: black;
+      color: white;
+      background: linear-gradient(
+          180deg,
+          rgba(19, 19, 20, 0.4),
+          rgba(11, 11, 11, 0.5)
+        ),
+        url('/asset/image/miami4.JPG') no-repeat top center/cover;
+      width: 100%;
+      backdrop-filter: blur(5.7px);
+      margin: 1rem 2rem;
+    }
+
+    .about-right {
+      width: 100%;
+      margin: 1rem 2rem;
+      padding: 0.5rem;
+      overflow: hidden;
+
+      .about-right-content {
+        height: 100%;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        color: #203040;
+
+        span {
+          border-bottom: 0.2rem solid red;
+          font-weight: 100;
+          font-size: 1rem;
+          padding: 0.5rem 0;
+        }
+      }
+      p,
+      li {
+        margin-bottom: 2rem;
+        color: rgb(95, 94, 94);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .about {
+    margin: 1rem 0;
+    width: 100%;
+
+    .about-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      margin: 0 auto;
+
+      .about-left {
+        position: relative;
+        background: black;
+        color: white;
+        background: linear-gradient(
+            180deg,
+            rgba(19, 19, 20, 0.4),
+            rgba(11, 11, 11, 0.5)
+          ),
+          url('/asset/image/miami4.JPG') no-repeat top center/cover;
+        width: 100%;
+        backdrop-filter: blur(5.7px);
+        margin: 1rem 2rem;
+
+        .read-more {
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: auto;
+          height: 100%;
+
+          h2 {
+            padding-bottom: 1rem;
+            font-size: 1.5rem;
+            span {
+              padding: 0 1rem;
+              font-weight: 500;
+              font-size: 1.1rem;
+            }
+          }
+        }
+      }
+
+      .about-right {
+        width: 100%;
+        margin: 1rem 2rem;
+        padding: 0.5rem;
+        overflow: hidden;
+
+        .about-right-content {
+          height: 100%;
+        }
+
+        h2 {
+          font-size: 1rem;
+          font-weight: 700;
+          margin-bottom: 2rem;
+          color: #203040;
+
+          span {
+            border-bottom: 0.2rem solid red;
+            font-weight: 100;
+            padding: 0.5rem 0;
+          }
+        }
+        p,
+        li {
+          margin-bottom: 2rem;
+          color: rgb(95, 94, 94);
+        }
+      }
+    }
+  }
+}

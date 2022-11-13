@@ -1,0 +1,37 @@
+.accord-btn {
+  font-size: 16px;
+  background-color: #203040;
+  color: #fff;
+  text-align: left;
+  font-weight: 700;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8px;
+  cursor: pointer;
+  border: none;
+}
+
+.accordion-item {
+  border-top: 1px solid #9f9f9f;
+}
+
+.control {
+  font-size: 20px;
+}
+
+.subtitle {
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+.accordion-item.active .accord-btn {
+  background-color: red;
+}
+.subtitle-wrapper {
+  height: 0;
+  overflow: hidden;
+  transition: height ease 0.6s;
+}

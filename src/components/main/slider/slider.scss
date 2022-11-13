@@ -1,0 +1,303 @@
+.slider {
+  width: 100%;
+  height: 80vh;
+
+  .slider-inner {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    animation: animatedBackground 10s linear infinite alternate;
+
+    @keyframes animatedBackground {
+      from {
+        // background-position: 0 0;
+      }
+      to {
+        background-position: 100% 0;
+      }
+    }
+
+    .hero-content-container {
+      position: absolute;
+      max-width: 90%;
+      top: 30%;
+      left: 13%;
+      h1 {
+        color: #fff;
+        font-size: 4rem;
+        color: white;
+        transition: all 5s ease-in-out;
+        animation: titleAnim 3s -1s ease-in-out;
+      }
+
+      h3 {
+        font-size: 2rem;
+        color: rgba(234, 229, 229, 0.794);
+        animation: subtitleAnim 4s -1s ease-in-out;
+      }
+    }
+
+    @keyframes titleAnim {
+      5% {
+        transform: translateY(-80%);
+      }
+      50% {
+        transform: translateY(150px);
+      }
+    }
+
+    @keyframes subtitleAnim {
+      40% {
+        transform: translateY(-200%);
+      }
+
+      70% {
+        transform: translateY(60px);
+      }
+    }
+  }
+
+  .next,
+  .prev {
+    position: absolute;
+    color: #fff;
+    z-index: 3;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #333;
+    padding: 8px 10px;
+    opacity: 0.7;
+    border: none;
+
+    &:hover {
+      background-color: #fff;
+      color: #203040;
+      transform: transition 4s ease-in;
+    }
+  }
+  .next {
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%, -50%);
+  }
+  .prev {
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%, -50%);
+  }
+}
+
+// Media Queey________________________________________________
+
+@media only screen and (max-width: 768px) {
+  .slider {
+    width: 100%;
+    height: 70vh;
+
+    .slider-inner {
+      height: 100%;
+      width: 100%;
+
+      .hero-content-container {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        right: 10%;
+        width: 100%;
+        h1 {
+          color: #fff;
+          font-size: 2rem;
+          color: white;
+          transition: all 5s ease-in-out;
+          animation: titleAnim 3s -1s ease-in-out;
+        }
+
+        h3 {
+          font-size: 1.5rem;
+          color: rgba(234, 229, 229, 0.794);
+          animation: subtitleAnim 4s -1s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .slider {
+    width: 100%;
+    height: 70vh;
+
+    .next,
+    .prev {
+      position: absolute;
+      color: #fff;
+      z-index: 3;
+      font-size: 25px;
+      text-align: center;
+      cursor: pointer;
+      background-color: #333;
+      padding: 8px 10px;
+      opacity: 0.7;
+      border: none;
+      display: none;
+
+      &:hover {
+        background-color: #fff;
+        color: #203040;
+        transform: transition 4s ease-in;
+      }
+    }
+
+    .slider-inner {
+      height: 100%;
+      max-width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      animation: animatedBackground 10s linear infinite alternate;
+
+      @keyframes animatedBackground {
+        from {
+          // background-position: 0 0;
+        }
+        to {
+          background-position: 100% 0;
+        }
+      }
+
+      .hero-content-container {
+        position: absolute;
+        width: 100%;
+        left: 5%;
+        top: 40%;
+        h1 {
+          width: 100%;
+          color: #fff;
+          font-size: 2rem;
+          color: white;
+          transition: all 5s ease-in-out;
+          animation: titleAnim 3s -1s ease-in-out;
+        }
+
+        h3 {
+          font-size: 1rem;
+          width: 100%;
+          color: rgba(234, 229, 229, 0.794);
+          animation: subtitleAnim 4s -1s ease-in-out;
+        }
+      }
+
+      @keyframes titleAnim {
+        5% {
+          transform: translateY(-80%);
+        }
+        50% {
+          transform: translateY(150px);
+        }
+      }
+
+      @keyframes subtitleAnim {
+        40% {
+          transform: translateY(-200%);
+        }
+
+        70% {
+          transform: translateY(60px);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .slider {
+    width: 100%;
+    height: 70vh;
+
+    .next,
+    .prev {
+      position: absolute;
+      color: #fff;
+      z-index: 3;
+      font-size: 25px;
+      text-align: center;
+      cursor: pointer;
+      background-color: #333;
+      padding: 8px 10px;
+      opacity: 0.7;
+      border: none;
+      display: none;
+
+      &:hover {
+        background-color: #fff;
+        color: #203040;
+        transform: transition 4s ease-in;
+      }
+    }
+
+    .slider-inner {
+      height: 100%;
+      max-width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      animation: animatedBackground 10s linear infinite alternate;
+
+      @keyframes animatedBackground {
+        from {
+          // background-position: 0 0;
+        }
+        to {
+          background-position: 100% 0;
+        }
+      }
+
+      .hero-content-container {
+        position: absolute;
+        width: 100%;
+        left: 5%;
+        top: 40%;
+        h1 {
+          width: 100%;
+          color: #fff;
+          font-size: 2rem;
+          color: white;
+          transition: all 5s ease-in-out;
+          animation: titleAnim 3s -1s ease-in-out;
+        }
+
+        h3 {
+          font-size: 1rem;
+          width: 100%;
+          color: rgba(234, 229, 229, 0.794);
+          animation: subtitleAnim 4s -1s ease-in-out;
+        }
+      }
+
+      @keyframes titleAnim {
+        5% {
+          transform: translateY(-80%);
+        }
+        50% {
+          transform: translateY(150px);
+        }
+      }
+
+      @keyframes subtitleAnim {
+        40% {
+          transform: translateY(-200%);
+        }
+
+        70% {
+          transform: translateY(60px);
+        }
+      }
+    }
+  }
+}

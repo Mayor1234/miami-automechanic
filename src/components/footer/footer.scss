@@ -1,0 +1,241 @@
+.footer-container {
+  background-color: rgba(25, 128, 232, 0.844);
+  color: #fff;
+  border-top: 1px solid #203040;
+  width: 100%;
+
+  .footer-top {
+    padding: 2rem 0;
+
+    .footer-top-wrapper {
+      display: flex;
+
+      ul {
+        list-style: none;
+        line-height: 1.5;
+        padding: 1rem 0;
+        cursor: pointer;
+
+        li {
+          padding-bottom: 0.5rem;
+        }
+      }
+      h2 {
+        padding-bottom: 1rem;
+
+        span {
+          color: #dedfe1;
+          font-weight: 100;
+        }
+      }
+      .miami-info {
+        width: 100%;
+        height: 100%;
+        // margin: 0 1rem;
+        flex: 2;
+        .company-logo {
+          width: 20%;
+        }
+
+        .company-info {
+          padding-top: 1rem;
+          margin: 0 1rem;
+
+          .social-icons-container {
+            display: flex;
+            margin: 2rem 0;
+
+            .social-icon {
+              margin-right: 2rem;
+              color: #f7f8f9;
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+
+      .menu-services-footer {
+        width: 100%;
+        margin: 0 1rem;
+        flex: 1.5;
+      }
+      .quick-links {
+        width: 100%;
+        margin: 0 1rem;
+        flex: 1;
+      }
+      .contact-info {
+        width: 100%;
+        margin: 0 2rem;
+        flex: 2;
+        li {
+          display: flex;
+          span {
+            padding-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(45, 115, 201);
+    padding: 2rem 0;
+  }
+}
+
+// Media Query_________________________________________
+
+@media only screen and (max-width: 768px) {
+  .footer-top-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .footer-container {
+    width: 100%;
+
+    .footer-top {
+      padding: 2rem 0;
+
+      .footer-top-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+
+        ul {
+          padding-bottom: 1.2rem;
+        }
+        h2 {
+          padding-bottom: 0;
+        }
+        .miami-info {
+          width: 100%;
+          height: 100%;
+          margin: 0 1rem;
+          flex: 1;
+
+          .logo {
+            width: 50%;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            margin: 0;
+
+            .img-logo {
+              width: 3rem;
+              height: 3rem;
+            }
+
+            .brand-name {
+              font-size: 0.7rem;
+              color: #203040;
+            }
+          }
+        }
+
+        .menu-services-footer,
+        .quick-links,
+        .contact-info {
+          width: 100%;
+          margin: 0 2rem;
+          flex: 1;
+        }
+      }
+    }
+    .footer-bottom {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(45, 115, 201);
+      padding: 1rem 0;
+
+      p {
+        width: 100%;
+        padding: 0 1rem;
+        align-items: center;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .footer-container {
+    width: 100%;
+
+    .footer-top {
+      padding: 2rem 0;
+
+      .footer-top-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+
+        ul {
+          padding-bottom: 1.2rem;
+        }
+        h2 {
+          padding-bottom: 0;
+        }
+        .miami-info {
+          width: 100%;
+          height: 100%;
+          margin: 0 1rem;
+          flex: 1;
+
+          .logo {
+            width: 50%;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            margin: 0;
+
+            .img-logo {
+              width: 3rem;
+              height: 3rem;
+            }
+
+            .brand-name {
+              font-size: 0.7rem;
+              color: #203040;
+            }
+          }
+        }
+
+        .menu-services-footer,
+        .quick-links,
+        .contact-info {
+          width: 100%;
+          margin: 0 2rem;
+          flex: 1;
+        }
+      }
+    }
+    .footer-bottom {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(45, 115, 201);
+      padding: 1rem 0;
+
+      p {
+        width: 100%;
+        padding: 0 1rem;
+        align-items: center;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
