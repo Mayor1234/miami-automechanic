@@ -15,7 +15,6 @@ const Accordion = ({ accordionData }) => {
 
   return (
     <div className="accord-container">
-      {console.log(accordionData)}
       <ul className="accordion">
         {accordionData.map((accordItem, index) => (
           <AccordionItems

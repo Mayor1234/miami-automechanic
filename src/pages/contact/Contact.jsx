@@ -18,16 +18,21 @@ function Contact() {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
+    form.current.reset();
 
     emailjs
       .sendForm(
-        process.env.REACT_APP_YOUR_SERVICE_ID,
-        process.env.REACT_APP_YOUR_TEMPLATE_ID,
+        // process.env.REACT_APP_YOUR_SERVICE_ID,
+        'service_3vn16l9',
+        // process.env.REACT_APP_YOUR_TEMPLATE_ID,
+        'template_44zoaze',
         form.current,
-        process.env.REACT_APP_YOUR_PUBLIC_KEY
+        // process.env.REACT_APP_YOUR_PUBLIC_KEY
+        'yI-SWRbMXqDQ455e8'
       )
       .then(
         (result) => {
+          alert('message sent successfully...');
           console.log(result.text);
         },
         (error) => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import './footer.scss';
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
 import Logo from '../header/Logo';
 import { Link } from 'react-router-dom';
 
@@ -32,6 +32,9 @@ function Footer() {
 
                   <a href="https://www.instagram.com/realer231">
                     <FaInstagram className="social-icon" />
+                  </a>
+                  <a href="https://www.instagram.com/realer231">
+                    <FaYoutube className="social-icon" />
                   </a>
                 </div>
               </div>
@@ -85,7 +88,7 @@ function Footer() {
               </li>
               <li>
                 <span>E-mail:</span>
-                <p>ioyeniyi@yahoo.com</p>
+                <p>ioyeniyi0@gmail.com</p>
               </li>
             </ul>
           </div>

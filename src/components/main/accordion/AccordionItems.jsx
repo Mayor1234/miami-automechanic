@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import './accordionitems.scss';
-import { FaAngleDoubleDown } from 'react-icons/fa';
-import { FaAngleDoubleRight } from 'react-icons/fa';
+import { FaAngleDown } from 'react-icons/fa';
+import { FaAngleRight } from 'react-icons/fa';
 
 function AccordionItems({ accordItem, active, toggle }) {
   const { title, subtitle } = accordItem;
@@ -14,7 +14,7 @@ function AccordionItems({ accordItem, active, toggle }) {
         <button className="accord-btn" onClick={toggle}>
           {title}
           <span className={'control'}>
-            {active ? <FaAngleDoubleDown /> : <FaAngleDoubleRight />}
+            {active ? <FaAngleRight /> : <FaAngleDown />}
           </span>
         </button>
 
