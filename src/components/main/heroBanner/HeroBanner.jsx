@@ -73,9 +73,9 @@ function HeroBanner() {
             <div className="elementor-content">
               <h2>Searching for accessories?</h2>
               <p>
-                With a robust selection of popular Automobile new spare parts,
-                we're trusted by many to provide on-demand accessories for your
-                Toyota/Lexus branded cars. Call or visit us today!
+                With a robust selection of popular automobile spare parts, we
+                are trusted by many to provide on-demand accessories for all
+                brand of cars. Call or visit us today!
               </p>
             </div>
           </div>

@@ -13,7 +13,7 @@ function Services() {
   return (
     <>
       <PagesHeader pageData={pageData} />
-      <div className="row">
+      <div className="service-page row">
         <h2>
           <span>Our</span> Services
         </h2>

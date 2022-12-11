@@ -153,23 +153,6 @@
     }
 
     .slider-inner {
-      height: 100%;
-      max-width: 100%;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-      animation: animatedBackground 10s linear infinite alternate;
-
-      @keyframes animatedBackground {
-        from {
-          // background-position: 0 0;
-        }
-        to {
-          background-position: 100% 0;
-        }
-      }
-
       .hero-content-container {
         position: absolute;
         width: 100%;
@@ -179,35 +162,6 @@
           width: 100%;
           color: #fff;
           font-size: 2rem;
-          color: white;
-          transition: all 5s ease-in-out;
-          animation: titleAnim 3s -1s ease-in-out;
-        }
-
-        h3 {
-          font-size: 1rem;
-          width: 100%;
-          color: rgba(234, 229, 229, 0.794);
-          animation: subtitleAnim 4s -1s ease-in-out;
-        }
-      }
-
-      @keyframes titleAnim {
-        5% {
-          transform: translateY(-80%);
-        }
-        50% {
-          transform: translateY(150px);
-        }
-      }
-
-      @keyframes subtitleAnim {
-        40% {
-          transform: translateY(-200%);
-        }
-
-        70% {
-          transform: translateY(60px);
         }
       }
     }
@@ -241,23 +195,6 @@
     }
 
     .slider-inner {
-      height: 100%;
-      max-width: 100%;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-      animation: animatedBackground 10s linear infinite alternate;
-
-      @keyframes animatedBackground {
-        from {
-          // background-position: 0 0;
-        }
-        to {
-          background-position: 100% 0;
-        }
-      }
-
       .hero-content-container {
         position: absolute;
         width: 100%;
@@ -267,35 +204,6 @@
           width: 100%;
           color: #fff;
           font-size: 2rem;
-          color: white;
-          transition: all 5s ease-in-out;
-          animation: titleAnim 3s -1s ease-in-out;
-        }
-
-        h3 {
-          font-size: 1rem;
-          width: 100%;
-          color: rgba(234, 229, 229, 0.794);
-          animation: subtitleAnim 4s -1s ease-in-out;
-        }
-      }
-
-      @keyframes titleAnim {
-        5% {
-          transform: translateY(-80%);
-        }
-        50% {
-          transform: translateY(150px);
-        }
-      }
-
-      @keyframes subtitleAnim {
-        40% {
-          transform: translateY(-200%);
-        }
-
-        70% {
-          transform: translateY(60px);
         }
       }
     }

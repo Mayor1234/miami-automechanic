@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import PagesHeader from '../pagesHeader/PagesHeader';
 import './contact.scss';
@@ -9,9 +9,19 @@ import {
   faMapMarker,
 } from '@fortawesome/free-solid-svg-icons';
 
+import { ToastContainer, toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
+
 const pageData = {
   page: 'How Can We Help?',
   title: 'Contact Us',
+};
+
+const showMessage = () => {
+  toast.success('message sent successfully...', {
+    position: toast.POSITION.TOP_CENTER,
+  });
 };
 
 function Contact() {
@@ -32,7 +42,7 @@ function Contact() {
       )
       .then(
         (result) => {
-          alert('message sent successfully...');
+          showMessage(result.text);
           console.log(result.text);
         },
         (error) => {
@@ -84,6 +94,7 @@ function Contact() {
               <label>Message</label>
               <textarea name="message" />
               <input type="submit" value="Send" />
+              <ToastContainer />
             </form>
           </div>
         </div>

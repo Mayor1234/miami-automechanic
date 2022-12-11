@@ -26,8 +26,7 @@ function Process() {
             <p className="arrow-content">
               Call: 08038074534 or
               <br />
-              Email:thomposonvictor1206@gmail.com <br />
-              to book an appointment.
+              Email: ioyeniyi0@gmail.com to book an appointment.
             </p>
           </div>
           <div className="process-box">

@@ -15,10 +15,8 @@ const About = () => {
                     <span>Over 20+ Years</span>Experience
                   </h2>
                   <div className="about-btn-center">
-                    <Link to="/about">
-                      <button type="button" className="about-btn">
-                        Read More
-                      </button>
+                    <Link to="/about" className="about-link">
+                      Read more
                     </Link>
                   </div>
                 </div>

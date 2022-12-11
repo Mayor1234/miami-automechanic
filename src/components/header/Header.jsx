@@ -25,7 +25,9 @@ function Header() {
               onClick={handleClick}
             >
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/" className="active">
+                  Home
+                </Link>
               </li>
               <li>
                 <Link to="/services">Services</Link>
