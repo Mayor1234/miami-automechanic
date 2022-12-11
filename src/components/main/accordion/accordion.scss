@@ -8,3 +8,12 @@
 .accordion {
   list-style: none;
 }
+
+@media only screen and (max-width: 768px) {
+  .accord-container {
+    max-width: 600px;
+    margin: 6rem auto 4rem;
+    margin: 1rem;
+    padding: 1rem 0;
+  }
+}

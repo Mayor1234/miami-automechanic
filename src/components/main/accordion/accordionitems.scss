@@ -16,10 +16,14 @@
 
 .accordion-item {
   border-top: 1px solid #9f9f9f;
-}
 
-.control {
-  font-size: 20px;
+  .title-pos {
+    padding-left: 1rem;
+  }
+  .control {
+    font-size: 20px;
+    padding-right: 1rem;
+  }
 }
 
 .subtitle {

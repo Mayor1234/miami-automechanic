@@ -11,12 +11,14 @@ function AccordionItems({ accordItem, active, toggle }) {
   return (
     <div>
       <li className={`accordion-item ${active ? 'activve' : ''}`}>
-        <button className="accord-btn" onClick={toggle}>
-          {title}
-          <span className={'control'}>
-            {active ? <FaAngleRight /> : <FaAngleDown />}
-          </span>
-        </button>
+        <div>
+          <button className="accord-btn" onClick={toggle}>
+            <div className="title-pos">{title}</div>
+            <span className="control">
+              {active ? <FaAngleRight /> : <FaAngleDown />}
+            </span>
+          </button>
+        </div>
 
         <div
           ref={subRef}
