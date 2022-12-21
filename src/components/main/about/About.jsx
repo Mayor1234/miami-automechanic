@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import GoogleAds from '../../googleAds/GoogleAds';
 import './about.scss';
 
 const About = () => {
@@ -60,6 +61,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <GoogleAds dataAdSlot={2189077895} />
     </div>
   );
 };

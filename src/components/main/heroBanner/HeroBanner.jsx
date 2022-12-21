@@ -3,10 +3,12 @@ import './heroBanner.scss';
 import { slides } from '../../utils/SliderData';
 import Slider from '../slider/Slider';
 import { Link } from 'react-router-dom';
+import GoogleAds from '../../googleAds/GoogleAds';
 
 function HeroBanner() {
   return (
     <div>
+      <GoogleAds dataAdSlot={2189077895} />
       <div className="slider-container">
         <Slider slides={slides} />
         <Link to="/contact">

@@ -3,6 +3,7 @@ import PagesHeader from '../pagesHeader/PagesHeader';
 import './services.scss';
 import { serviceData } from '../../components/utils/services';
 import ServicesPreview from './ServicesPreview';
+import GoogleAds from '../../components/googleAds/GoogleAds';
 
 const pageData = {
   page: 'Best Services',
@@ -13,6 +14,7 @@ function Services() {
   return (
     <>
       <PagesHeader pageData={pageData} />
+      <GoogleAds dataAdSlot={2189077895} />
       <div className="service-page row">
         <h2>
           <span>Our</span> Services

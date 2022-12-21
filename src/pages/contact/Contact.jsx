@@ -12,6 +12,7 @@ import {
 import { ToastContainer, toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
+import GoogleAds from '../../components/googleAds/GoogleAds';
 
 const pageData = {
   page: 'How Can We Help?',
@@ -54,6 +55,7 @@ function Contact() {
   return (
     <div>
       <PagesHeader pageData={pageData} />
+      <GoogleAds dataAdSlot={2189077895} />
       <div className="contact-container row">
         <div className="contact-left">
           <div className="contact-heading">

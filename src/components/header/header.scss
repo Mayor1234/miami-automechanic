@@ -35,18 +35,19 @@ nav {
         text-decoration: none;
         color: #fff;
         cursor: pointer;
-        border-bottom: 2px solid transparent;
+        border-bottom: 4px solid transparent;
         padding: 1rem 0;
 
         &:hover {
           color: #203040;
-          border-bottom: 2px solid #203040;
-          transition: border-bottom 1s ease-in-out;
+          padding: 1.6rem 0;
+          border-bottom: 3px solid #203040;
+          transition: all 0.35s ease-in-out;
         }
       }
       .active {
-        border-bottom: 2px solid #203040;
-        padding: 1rem 0;
+        border-bottom: 3px solid #203040;
+        padding: 1.6rem 0;
       }
     }
   }
@@ -67,7 +68,7 @@ nav {
     .main-nav {
       display: flex;
       justify-content: flex-start;
-      align-items: start;
+      align-items: flex-start;
       flex-flow: column nowrap;
       background-color: rgb(25, 128, 232);
       width: 100vw;
@@ -84,8 +85,23 @@ nav {
       border-radius: 0 0 8px 8px;
 
       li {
+        width: 100%;
         padding: 18px 10px;
         cursor: pointer;
+      }
+      a {
+        border-bottom: none;
+
+        &:hover {
+          color: #203040;
+          padding: 1.6rem 0;
+          border-bottom: none;
+          transition: all 0.35s ease-in-out;
+        }
+      }
+
+      .active {
+        display: none;
       }
     }
 
