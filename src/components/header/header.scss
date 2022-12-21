@@ -77,31 +77,37 @@ nav {
       position: fixed;
       top: 5rem;
       right: 0;
+      left: 0;
       padding-top: 3.5rem;
       transform: translateX(-100%);
       margin: 0;
-      padding-left: 3rem;
+      // padding-left: 3rem;
       border-top: 1px solid #f6f7f8;
       border-radius: 0 0 8px 8px;
 
       li {
         width: 100%;
-        padding: 18px 10px;
+        padding: 0.5rem 0;
         cursor: pointer;
       }
       a {
         border-bottom: none;
+        padding: 1rem 2rem;
+        display: inline-block;
+        width: 100%;
 
         &:hover {
           color: #203040;
           padding: 1.6rem 0;
+          background-color: rgba(25, 129, 232, 0.785);
           border-bottom: none;
           transition: all 0.35s ease-in-out;
         }
       }
 
       .active {
-        display: none;
+        border-bottom: 0;
+        padding: 1rem 2rem;
       }
     }
 
