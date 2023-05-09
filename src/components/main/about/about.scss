@@ -115,7 +115,7 @@ a {
 @media only screen and (max-width: 768px) {
   .about-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     width: 90%;
@@ -175,7 +175,7 @@ a {
 
     .about-container {
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
       justify-content: center;
       align-items: center;
       width: 90%;

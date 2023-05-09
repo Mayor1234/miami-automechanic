@@ -11,9 +11,6 @@ function HeroBanner() {
       <GoogleAds dataAdSlot={2189077895} />
       <div className="slider-container">
         <Slider slides={slides} />
-        <Link to="/contact">
-          <button className="btn">Contact Us</button>
-        </Link>
       </div>
       <div className="elementor-section">
         <div className="elementor-widget-wrap">

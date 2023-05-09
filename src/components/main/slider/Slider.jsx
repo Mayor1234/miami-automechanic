@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './slider.scss';
 import { FaAngleLeft } from 'react-icons/fa';
 import { FaAngleRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 function Slider({ slides }) {
   const [current, setCurrent] = useState(0);
@@ -44,8 +45,11 @@ function Slider({ slides }) {
       <div className="slider-inner" style={slideStyle}>
         {
           <div className="hero-content-container">
-            <h1>{slides[current].title}</h1>
-            <h3>{slides[current].subtitle}</h3>
+            <h1>{slides && slides[current].title}</h1>
+            <h3>{slides && slides[current].subtitle}</h3>
+            <Link to="/contact">
+              <button className="btn-hero">Contact Us</button>
+            </Link>
           </div>
         }
       </div>

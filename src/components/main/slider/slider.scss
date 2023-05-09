@@ -1,6 +1,6 @@
 .slider {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
 
   .slider-inner {
     height: 100%;
@@ -9,55 +9,72 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    animation: animatedBackground 10s linear infinite alternate;
+    // animation: animatedBackground 10s linear infinite alternate;
 
-    @keyframes animatedBackground {
-      from {
-        // background-position: 0 0;
-      }
-      to {
-        background-position: 100% 0;
-      }
-    }
+    // @keyframes animatedBackground {
+    //   from {
+    //     // background-position: 0 0;
+    //   }
+    //   to {
+    //     background-position: 100% 0;
+    //   }
+    // }
 
     .hero-content-container {
       position: absolute;
       max-width: 90%;
       top: 30%;
       left: 13%;
+      display: flex;
+      flex-direction: column;
+
       h1 {
         color: #fff;
-        font-size: 4rem;
+        font-size: 3rem;
         color: white;
         transition: all 5s ease-in-out;
-        animation: titleAnim 3s -1s ease-in-out;
+        // animation: titleAnim 3s -1s ease-in-out;
       }
 
       h3 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: rgba(234, 229, 229, 0.794);
-        animation: subtitleAnim 4s -1s ease-in-out;
+        // animation: subtitleAnim 4s -1s ease-in-out;
+      }
+      .btn-hero {
+        margin-top: 3rem;
+        border: 1px solid #fff;
+        padding: 1rem 2rem;
+        font-size: 20px;
+        font-weight: 700;
+
+        transition: transform 0.5s ease-in-out;
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(0.9);
+        }
       }
     }
 
-    @keyframes titleAnim {
-      5% {
-        transform: translateY(-80%);
-      }
-      50% {
-        transform: translateY(150px);
-      }
-    }
+    // @keyframes titleAnim {
+    //   5% {
+    //     transform: translateY(-80%);
+    //   }
+    //   50% {
+    //     transform: translateY(150px);
+    //   }
+    // }
 
-    @keyframes subtitleAnim {
-      40% {
-        transform: translateY(-200%);
-      }
+    // @keyframes subtitleAnim {
+    //   40% {
+    //     transform: translateY(-200%);
+    //   }
 
-      70% {
-        transform: translateY(60px);
-      }
-    }
+    //   70% {
+    //     transform: translateY(60px);
+    //   }
+    // }
   }
 
   .next,
@@ -68,10 +85,9 @@
     font-size: 25px;
     text-align: center;
     cursor: pointer;
-    background-color: #333;
+    border: 1px solid #fff;
     padding: 8px 10px;
     opacity: 0.7;
-    border: none;
 
     &:hover {
       background-color: #fff;
@@ -113,13 +129,13 @@
           font-size: 2rem;
           color: white;
           transition: all 5s ease-in-out;
-          animation: titleAnim 3s -1s ease-in-out;
+          // animation: titleAnim 3s -1s ease-in-out;
         }
 
         h3 {
           font-size: 1.5rem;
           color: rgba(234, 229, 229, 0.794);
-          animation: subtitleAnim 4s -1s ease-in-out;
+          // animation: subtitleAnim 4s -1s ease-in-out;
         }
       }
     }
@@ -157,11 +173,17 @@
         position: absolute;
         width: 100%;
         left: 5%;
-        top: 40%;
+        top: 35%;
         h1 {
           width: 100%;
           color: #fff;
           font-size: 2rem;
+        }
+        .btn-hero {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 3rem auto;
         }
       }
     }
@@ -172,39 +194,35 @@
   .slider {
     width: 100%;
     height: 70vh;
-
-    .next,
-    .prev {
-      position: absolute;
-      color: #fff;
-      z-index: 3;
-      font-size: 25px;
-      text-align: center;
-      cursor: pointer;
-      background-color: #333;
-      padding: 8px 10px;
-      opacity: 0.7;
-      border: none;
-      display: none;
-
-      &:hover {
-        background-color: #fff;
-        color: #203040;
-        transform: transition 4s ease-in;
-      }
-    }
-
     .slider-inner {
       .hero-content-container {
-        position: absolute;
         width: 100%;
         left: 5%;
-        top: 40%;
+        top: 35%;
+        display: flex;
+        flex-direction: column;
+
         h1 {
           width: 100%;
           color: #fff;
           font-size: 2rem;
         }
+        .btn-hero {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 3rem auto;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .slider {
+    .slider-inner {
+      .hero-content-container {
+        top: 30%;
       }
     }
   }

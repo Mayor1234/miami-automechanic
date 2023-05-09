@@ -1,7 +1,8 @@
 .process-bg {
   background-color: #f0f2f7;
   padding: 5rem;
-  margin-top: 5rem;
+  margin: 5rem auto;
+  width: 100%;
 
   .our-process {
     .process-heading {
@@ -247,18 +248,18 @@
 @media only screen and (max-width: 390px) {
   .process-bg {
     margin-top: 2rem;
-    width: 100%;
-    padding: 0;
+    width: 90%;
+    padding: 0 0;
 
     .our-process {
-      padding: 1rem;
+      padding: 0rem;
       .process-heading {
-        max-width: 100%;
+        width: 100%;
         margin: 0;
         padding: 2rem 0;
 
         h2 {
-          margin: 0;
+          margin: 0 1rem;
           font-size: 1.5rem;
           font-weight: 700;
 
@@ -273,15 +274,19 @@
       .box-container {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
 
         .process-box {
           background-color: #203040;
           position: relative;
           color: #fff;
-          width: 350px;
+          width: 100%;
           height: 200px;
           padding: 1rem;
-          margin: 0 1rem;
+          margin: 0 auto;
 
           .arrow-content {
             display: flex;
@@ -289,22 +294,23 @@
             align-items: flex-start;
             margin-left: 0;
             margin-top: 0;
-            padding: 1rem;
+            padding: 0rem;
           }
           h3 {
             display: flex;
+            font-size: 1rem;
             justify-content: start;
             align-items: flex-start;
-            padding: 0.5rem 3rem;
+            padding: 0.5rem 2rem;
           }
           .process-icon {
             color: white;
             z-index: 20;
-            font-size: 1.2rem;
+            font-size: 1rem;
             position: absolute;
             top: 1.6rem;
-            left: 2rem;
-            padding-right: 5rem;
+            left: 1rem;
+            padding-right: 1rem;
           }
           .arrow-div,
           .arrow-div2,

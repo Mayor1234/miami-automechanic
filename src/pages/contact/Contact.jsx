@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import PagesHeader from '../pagesHeader/PagesHeader';
 import './contact.scss';
